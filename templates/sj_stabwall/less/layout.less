@@ -1,0 +1,469 @@
+/*******************************************
+***          YT Framework: less          ***
+*******************************************/
+
+// --* Layouts Templates *-----------------
+// ----------------------------------------
+
+
+body{ 
+	color: #666666;
+	font-size: 13px;
+	line-height: 22px;
+	&.modal-open {
+		overflow:auto;
+	}
+}
+#yt_wrapper {
+	background: #838383;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #333;
+}
+@raleway: Raleway;
+
+.container {
+	max-width: 100%; 
+}
+
+.sidebar-close,
+.sidebar-open {
+	display: none !important;
+}
+#yt_wrapper {
+	.padding-left(300px);
+}
+
+//.Block Sidebar
+#sidebar-wrapper{
+	padding: 25px 0;
+    background: url("../images/bg/bg-sidebar.jpg") #838383;
+	position: fixed;
+	top: 0;
+	z-index: 16;
+	.left(0);
+	.size(100%, 300px);
+	display: block !important;
+	.opacity(100) !important;
+	.transition(transform 200ms ease-out 0s);
+	.container {
+		max-width: 100%;
+		padding-bottom: 80px;
+		position: relative;
+		min-height: 100%;
+	}
+}
+#page-content-wrapper {
+	background: #fff;
+}
+#yt_logo {
+	padding: 15px 0;
+	text-align: center;
+}
+#mainmenu {
+	padding: 0;
+}
+#social {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+}
+//.Block Mainmenu
+#yt_menuwrap{
+    background: @background1;
+	margin: 0;
+	position: relative;
+}
+
+#yt_menuwrap.menu-fixed{
+	width: 100%;
+	margin: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+//.Block Slideshow
+#yt_slideshow {
+	position: relative;
+	.container {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+#slideshow {
+	padding: 0;
+}
+
+/*	3.Block Breadcrumb
+/*-----------------------------------------------------*/
+
+#yt_breadcrumb{
+	position: relative;
+	overflow: hidden;
+	background: url(../images/bg/blog-title.png) no-repeat scroll center center;
+    &:before{
+		content: '';
+		position: absolute;
+		.size(40px, 100%);
+		background: rgba(0, 0, 0, 0.1);
+		left: 0;
+		bottom: 0;
+	}
+    #breadcrumb{
+        .module.breadcrum-style-me{
+			margin: 0;
+		}
+        .breadcrumb{
+			.border-radius(0);
+			background: none;
+			position: relative;
+            .divider{
+				margin: 0 5px;
+				vertical-align: 2px;
+			}
+            > li{
+				font-size: 14px;
+				padding: 10px 0;
+				line-height: 20px;
+				a{
+					color: #ffffff;
+					&:hover{
+						color: @linkColor;
+					}
+				}
+				span{
+					color: #ffffff;
+				}
+				&.last-active{
+					&:after{
+						display: none;
+					}
+				}
+		    }
+			> li + li:before{
+				display: none;
+			}
+			> li + li:after{
+				content: "/";
+				padding: 0 8px;
+				font-family: fontawesome;
+				color: #ffffff;
+				
+			}
+			>li.title-breadcrumbs{
+				width: 100%;
+				display: block;
+				font-size: 36px;
+				text-transform: uppercase;
+				color: #fff;
+				position: relative;
+				background-size: cover;
+				line-height: 22px;
+				padding: 85px 0 10px;
+				margin: 0 0 90px;
+				&:before{
+					content:'';
+					position: absolute;
+					.left(0);
+					.size(2px, 40px);
+					background: #ffbb45;
+					bottom: 0;
+					
+				}
+				span{
+					position: relative;
+					z-index: 2;
+				}
+				&:after{display: none;}
+				&:before{
+				}
+			}
+			&.breadcrum-style-me{
+				margin: 0;
+				padding: 0;
+			}
+        }
+    }
+}
+
+
+//5.Block Main Content
+#content{
+	background: #f5f5f5;
+	padding: 50px 0;
+	.homepage & {
+		padding: 0;
+	}
+}
+.about-us {
+	#content{
+		background: #fff;
+	}
+}
+.services {
+	#content{ 
+		padding: 50px 0 15px;
+	}
+}
+.full-content {
+	#content{ 
+		>.container {
+			width: 100%;
+			max-width: 100%;
+			padding: 0;
+		}
+	}
+}
+#yt_component {
+	> .search {
+		padding: 20px;
+		background: #fff;
+	}
+}
+//6.Block Spotlight
+#yt_spotlight1{
+	padding: 50px 0 45px;
+}
+
+#yt_spotlight2{
+	padding: 48px 0 0;
+	background: #f5f5f5;
+	.container {
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+#yt_spotlight3{
+	padding: 45px 0 50px;
+	background: #f5f5f5;
+}
+
+#yt_spotlight4{
+	display: block;
+	padding: 50px 0;
+}
+
+#yt_spotlight5{
+	display: block;
+	background: #f5f5f5;
+	padding: 50px 0 10px;
+}
+
+#yt_spotlight6 {
+	padding: 45px 0 50px;
+}
+
+#yt_spotlight7 {
+	background: #f5f5f5;
+	padding: 48px 0;
+}
+#yt_spotlight8{
+	padding: 50px 0 45px;
+	overflow: hidden;
+	.modcontent {
+		overflow: hidden;
+	}
+}
+#yt_spotlight9 {
+	background: #f5f5f5;
+	padding: 35px 0 28px;
+}
+
+#yt_spotlight10 {
+	background: url("@{base-url}/bg-spotlight10.png");
+	padding: 35px 0 33px;
+	color: #fff;
+	.modtitle {
+		color: #fff;
+		margin: 0 0 12px;
+	}
+}
+
+//7.Block Footer
+#yt_footer{
+	background: #fff;
+	text-align: center;
+	padding: 20px 0;
+	.copyright,
+	.designby{
+		display: inline-block;
+	}
+}
+
+//8.Non-responsive Bootstrap
+@media(max-width: 1024px) {
+	.no-res{
+		width: 1190px; 
+	}
+}
+
+.ip-header {
+	position: fixed;
+	top: 0;
+	z-index: 999999;
+	min-height: 320px;
+	width: 100%;
+	height: 100%;
+	background: #f1f1f1;
+}
+.msie {
+	.ip-header {
+		display: none;
+		visibility: hidden;
+		.opacity(0);
+	}
+}
+.ip-header h1 {
+	margin: 0;
+}
+
+.ip-logo,
+.ip-loader {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+	cursor: default;
+	pointer-events: none;
+}
+
+.ip-logo {
+	top: 40%;
+	text-align: center;
+	-webkit-transform: translate3d(0,-50%,0);
+	transform: translate3d(0,-50%,0);
+}
+
+.ip-loader {
+	top: 70%;
+	-webkit-transform: translate3d(0,-50%,0);
+	transform: translate3d(0,-50%,0);
+}
+
+.ip-header .ip-inner {
+	display: block;
+	margin: 0 auto;
+}
+
+.ip-header .ip-logo svg {
+	max-width: 480px;
+	width: 25%;
+}
+
+.ip-header .ip-logo svg path {
+	fill: @linkColor;
+}
+
+.ip-header .ip-loader svg path {
+	fill: none;
+	stroke-width: 6;
+}
+
+.ip-header .ip-loader svg path.ip-loader-circlebg {
+	stroke: #ddd;
+}
+
+.ip-header .ip-loader svg path.ip-loader-circle {
+	-webkit-transition: stroke-dashoffset 0.2s;
+	transition: stroke-dashoffset 0.2s;
+	stroke: @linkColor;
+}
+
+/* Animations */
+
+/* Initial animation of header elements */
+.loading .ip-logo,
+.loading .ip-loader {
+	opacity: 1;
+	-webkit-animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
+	animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
+}
+
+.loading .ip-loader {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+
+@-webkit-keyframes animInitialHeader {
+	from { opacity: 0; -webkit-transform: translate3d(0,1800px,0); }
+}
+
+@keyframes animInitialHeader {
+	from { opacity: 0; -webkit-transform: translate3d(0,800px,0); transform: translate3d(0,1800px,0); }
+}
+
+/* Header elements when loading finishes */
+.loaded .ip-logo,
+.loaded .ip-loader {
+	opacity: 1;
+}
+
+.loaded .ip-logo {
+	-webkit-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-webkit-animation: animLoadedLoader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+	animation: animLoadedLoader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+.loaded .ip-loader {
+	-webkit-animation: animLoadedLoader 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
+	animation: animLoadedLoader 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+
+@-webkit-keyframes animLoadedLoader {
+	to { opacity: 0; -webkit-transform: translate3d(0,-150%,0) scale3d(0.3,0.3,1); }
+}
+
+@keyframes animLoadedLoader {
+	to { opacity: 0; -webkit-transform: translate3d(0,-150%,0) scale3d(0.3,0.3,1); transform: translate3d(0,-150%,0) scale3d(0.3,0.3,1); }
+}
+
+/* Change the color of the logo */
+.loaded .ip-logo svg path {
+	-webkit-transition: all 0.5s ease 0.3s;
+	transition: all 0.5s ease 0.3s;
+	fill: #fff;
+}
+
+/* Header animation when loading finishes */
+.loaded .ip-header {
+	-webkit-animation: animLoadedHeader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+	animation: animLoadedHeader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+
+@-webkit-keyframes animLoadedHeader {
+	to { -webkit-transform: translate3d(0,-150%,0); transform: translate3d(0,-150%,0);	}
+}
+
+@keyframes animLoadedHeader {
+0%   {height: 100%; min-height: 480px;}
+	to { -webkit-transform: translate3d(0,-150%,0); transform: translate3d(0,-150%,0); }
+}
+
+/* Change layout class for header */
+.layout-switch .ip-header {
+	position: absolute;
+}
+
+/* No JS */
+.no-js .ip-header {
+	position: relative;
+	min-height: 0px;
+}
+
+.no-js .ip-header .ip-logo {
+	margin-top: 20px;
+	height: 180px;
+	opacity: 1;
+	-webkit-transform: none;
+	transform: none;
+}
+
+.no-js .ip-header .ip-logo svg path {
+	fill: #fff;
+}
+
+/* Media queries */

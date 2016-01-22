@@ -1,0 +1,436 @@
+/*******************************************
+***          YT Framework: less          ***
+*******************************************/
+/*   1.Large devices Desktops     ( Devices ≥1200px)
+ *   2.Medium devices Desktops    (980px ≥ Devices ≥ 1199px)
+ *   3.Small devices Tablets      (767px ≥ Devices ≥ 979px)
+ *   4.Extra small devices Phones ( Devices <767px)
+ */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*******************************************
+***       Style color  Green             ***
+*******************************************/
+@media (min-width: 1200px) {
+  .layout-boxed #yt_wrapper,
+  .layout-framed #yt_wrapper,
+  .layout-rounded #yt_wrapper {
+    position: relative;
+  }
+  .layout-boxed #sidebar-wrapper,
+  .layout-framed #sidebar-wrapper,
+  .layout-rounded #sidebar-wrapper {
+    position: absolute;
+  }
+  .layout-boxed #social,
+  .layout-framed #social,
+  .layout-rounded #social {
+    margin-top: 100px;
+    position: relative;
+  }
+  .layout-boxed #yt_wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 6px #777777 ;
+  }
+  .layout-framed #yt_wrapper {
+    width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 0 10px #777777 ;
+  }
+  .layout-rounded #yt_wrapper {
+    width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 0 10px #777777 ;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 1366px) and (max-width: 1600px) {
+  .container {
+    max-width: 1024px;
+  }
+  .layout-boxed .container,
+  .layout-framed .container,
+  .layout-rounded .container {
+    max-width: 900px;
+  }
+  #sidebar-wrapper {
+    width: 230px;
+  }
+  #yt_wrapper {
+    padding-left: 230px;
+  }
+  .rtl #yt_wrapper {
+    padding-right: 230px;
+    padding-left: 0;
+  }
+  .slideshow .yt-content-slider .content.style3 {
+    top: 50px;
+  }
+  .slideshow .yt-content-slider .content.style3 img {
+    margin: 0 auto 40px;
+  }
+}
+@media (max-width: 1600px) {
+  .slideshow .yt-content-slider .content.style1 p,
+  .slideshow .yt-content-slider .content.style2 p {
+    max-width: 440px;
+  }
+}
+@media (max-width: 1365px) {
+  #yt_wrapper {
+    padding-left: 0;
+  }
+  .rtl #yt_wrapper {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .sidebar-open {
+    cursor: pointer;
+    left: 22px;
+    position: fixed;
+    top: 9px;
+    font-size: 36px;
+    color: #ffb636;
+    z-index: 3;
+    display: block !important;
+  }
+  .rtl .sidebar-open {
+    left: auto;
+    right: 22px;
+  }
+  .sidebar-close {
+    cursor: pointer;
+    position: absolute;
+    right: 8px;
+    top: 2px;
+    color: #ffb636;
+    font-size: 19px;
+    display: block !important;
+  }
+  .rtl .sidebar-close {
+    left: 8px;
+    right: auto;
+  }
+  #sidebar-wrapper {
+    width: 240px;
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+  .rtl #sidebar-wrapper {
+    -webkit-transform: translate(100%, 0);
+    -moz-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    -o-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+  }
+  #sidebar-wrapper.closes {
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+  .rtl #sidebar-wrapper {
+    -webkit-transform: translate(100%, 0);
+    -moz-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    -o-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+  }
+  #sidebar-wrapper.open {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+    z-index: 9999;
+  }
+}
+/* ------------------------------------*/
+/* 	1. Layout Templates ---------------*/
+/* 	2. Joomla Core      ---------------*/
+/* 	3. Home Page        ---------------*/
+/* 	4. Bonus Page       ---------------*/
+/* 	5. Module           ---------------*/
+/* 	6. k2 Content       ---------------*/
+/*	-----------------------------------*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  div.container {
+    width: 970px;
+  }
+  /* 1.Layout Templates ---------------
+	---------------------------------*/
+  /* 2.Joomla Core ---------------
+	---------------------------------*/
+  /* 3.Home Page ---------------
+	---------------------------------*/
+  /* 4. Bonus Page ---------------
+	---------------------------------*/
+  /* 5. Module ---------------
+	---------------------------------*/
+  /* 6. K2 Content ---------------
+	---------------------------------*/
+}
+@media (max-width: 1199px) {
+  .slideshow .yt-content-slider .content img {
+    margin: 0 0 20px;
+    max-width: 200px;
+  }
+  .slideshow .yt-content-slider .content .title {
+    margin: 0 0 15px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+  .slideshow .yt-content-slider .content p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .slideshow .yt-content-slider .content.style3 {
+    top: 100px;
+  }
+  .slideshow .yt-content-slider .content.style3 img {
+    margin: 0 auto 20px;
+  }
+  #mainmenu .sj-megamenu .sj-megamenu-child {
+    min-width: auto;
+    max-width: 700px;
+  }
+}
+/* ------------------------------------*/
+/* 	1. Layout Templates ---------------*/
+/* 	2. Joomla Core      ---------------*/
+/* 	3. Home Page        ---------------*/
+/* 	4. Bonus Page       ---------------*/
+/* 	5. Module           ---------------*/
+/* 	6. k2 Content       ---------------*/
+/*	-----------------------------------*/
+@media (min-width: 768px) and (max-width: 991px) {
+  div.container {
+    width: 750px;
+  }
+  .our-team-work .item-social a {
+    width: 30px;
+    height: 30px;
+    line-height: 24px;
+  }
+  .our-team-work .slick-slider .slick-arrow {
+    width: 30px;
+    height: 30px;
+    line-height: 26px;
+  }
+  .our-team-work .slick-slider .slick-arrow i {
+    line-height: 30px;
+  }
+}
+@media (max-width: 991px) {
+  #yt_component {
+    padding: 30px 0;
+  }
+  .slideshow .yt-content-slider .content img {
+    margin: 0 0 20px;
+    max-width: 200px;
+  }
+  .slideshow .yt-content-slider .content .title {
+    margin: 0 0 10px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+  .slideshow .yt-content-slider .content p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .slideshow .yt-content-slider .content.style3 {
+    top: 50px;
+  }
+  .slideshow .yt-content-slider .content.style3 img {
+    margin: 0 auto 20px;
+  }
+  .latest-blog .sj-extraslider {
+    margin: 0 -10px !important;
+  }
+  .latest-blog .sj-extraslider .extraslider-inner .owl-item {
+    padding: 0 10px;
+    min-height: 20px !important;
+    height: auto !important;
+  }
+  .latest-blog .sj-extraslider .extraslider-inner .center .item {
+    margin: 0;
+  }
+  .latest-blog .sj-extraslider .extraslider-inner .center .item-wrap-inner {
+    animation-duration: 0.5s;
+    -webkit-animation-name: none;
+    animation-name: none;
+  }
+  .latest-blog .sj-extraslider .extraslider-inner .item,
+  .latest-blog .sj-extraslider .extraslider-inner .item-wrap {
+    position: static;
+  }
+  .welcome {
+    text-align: center;
+  }
+  .welcome .media-left {
+    display: block;
+    margin: 0 0 20px;
+    padding: 0;
+  }
+  .welcome .media-heading::before {
+    left: 50% !important;
+    right: auto !important;
+    -webkit-transform: translate(-50%, 0px);
+    -moz-transform: translate(-50%, 0px);
+    -ms-transform: translate(-50%, 0px);
+    -o-transform: translate(-50%, 0px);
+    transform: translate(-50%, 0px);
+  }
+  .we-build .image {
+    margin: 0 0 20px;
+  }
+  .block-pricing .signup {
+    padding: 8px 30px;
+  }
+  #sidebar-wrapper {
+    overflow-y: scroll;
+  }
+}
+/* ------------------------------------*/
+/* 	1. Layout Templates ---------------*/
+/* 	2. Joomla Core      ---------------*/
+/* 	3. Home Page        ---------------*/
+/* 	4. Bonus Page       ---------------*/
+/* 	5. Module           ---------------*/
+/* 	6. k2 Content       ---------------*/
+/*	-----------------------------------*/
+@media (max-width: 767px) {
+  .ip-logo {
+    top: 30%;
+  }
+  .ip-loader {
+    top: 60%;
+  }
+}
+@media (max-width: 767px) {
+  /* 	1. Layout Templates ---------------*/
+  /* 	2. Joomla Core      ---------------*/
+  /* 	3. Home Page        ---------------*/
+  /* 	4. Bonus Page       ---------------*/
+  /* 	5. Module           ---------------*/
+  .slideshow .yt-content-slider .content {
+    left: 0;
+    padding: 10px;
+    color: #fff;
+  }
+  .rtl .slideshow .yt-content-slider .content {
+    left: auto;
+    right: 0;
+  }
+  .slideshow .yt-content-slider .content img {
+    margin: 0 0 10px;
+    max-width: 150px;
+  }
+  .slideshow .yt-content-slider .content .title {
+    margin: 0 0 10px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .slideshow .yt-content-slider .content p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .slideshow .yt-content-slider .content.style3 {
+    top: 20px;
+    width: 100%;
+  }
+  .slideshow .yt-content-slider .content.style3 img {
+    margin: 0 auto 10px;
+  }
+  .welcome [class*="col"] {
+    margin-bottom: 20px;
+  }
+  .welcome [class*="col"]:last-child {
+    margin-bottom: 0;
+  }
+  .featured-service .media {
+    margin: 30px 0;
+  }
+  .block-pricing {
+    width: 100%;
+  }
+  .rtl .sj-listing-tabs .ltabs-tabs-container .ltabs-tabs li:first-child {
+    border-radius: 0;
+  }
+  .search-right .button {
+    width: auto;
+  }
+  div.contact-ajax .ctajax-wrap .modcontact h3 {
+    color: #fff;
+  }
+  .contact-ajax .ctajax-wrap .ctajax-element {
+    padding: 0 15px !important;
+  }
+  #ip-container {
+    overflow: hidden;
+  }
+}
+/* ------------------------------------*/
+/* 	1. Layout Templates ---------------*/
+/* 	2. Joomla Core      ---------------*/
+/* 	3. Home Page        ---------------*/
+/* 	4. Bonus Page       ---------------*/
+/* 	5. Module           ---------------*/
+/* 	6. k2 Content       ---------------*/
+/*	-----------------------------------*/
+@media (max-width: 480px) {
+  .newsletter .acymailing_module_form .acymailing_form {
+    width: 285px;
+  }
+  .contact-wrapper .el-form {
+    margin: 0 0 20px;
+  }
+  #yt_breadcrumb #breadcrumb .breadcrumb > li.title-breadcrumbs {
+    font-size: 26px;
+    line-height: 30px;
+    margin: 0 0 60px;
+    padding: 50px 0 10px;
+  }
+  .finder #search-form input[type="text"] {
+    margin-bottom: 20px;
+  }
+  #yt_component .search input {
+    max-width: 200px;
+  }
+}

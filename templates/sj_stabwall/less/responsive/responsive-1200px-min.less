@@ -1,0 +1,122 @@
+// Large devices Desktops 
+// ------------------
+@media (min-width: @screen-lg-min) {
+	
+	//.Layout Box
+	.layout-boxed,
+	.layout-framed,
+	.layout-rounded	{
+		#yt_wrapper {
+			position: relative;
+		}
+		#sidebar-wrapper {
+			position: absolute;
+		}
+		#social {
+			margin-top: 100px;
+			position: relative;
+		}
+	}
+	.layout-boxed #yt_wrapper{width: 1200px;margin: 0 auto;background: #fff; box-shadow: 0 0 6px #777777 ;}
+
+	.layout-framed #yt_wrapper{width: 1200px;margin: 20px auto;background: #fff; box-shadow: 0 0 10px #777777 ; }
+	
+	.layout-rounded #yt_wrapper{width: 1200px;margin: 20px auto;background: #fff; box-shadow: 0 0 10px #777777 ; border-radius: 15px; overflow: hidden;}
+}
+
+
+@media (min-width: 1366px) and (max-width: 1600px) {
+	.container{
+		max-width: 1024px;
+	} 
+	.layout-boxed,
+	.layout-framed,
+	.layout-rounded {
+		.container{
+			max-width:900px;
+		}
+	}
+	#sidebar-wrapper {
+		width: 230px;
+	}
+	#yt_wrapper {
+		.padding-left(230px);
+	}
+	.slideshow {
+		.yt-content-slider {
+			.content{
+				
+				&.style3 {
+					top: 50px;
+					img {
+						margin: 0 auto 40px;
+					}
+					.title{
+
+					}
+					p {
+
+					}
+				}
+				
+			}
+		}
+	}
+}
+@media (max-width: 1600px) {
+	.slideshow {
+		.yt-content-slider {
+			.content {
+				&.style1, &.style2 {
+					p {
+						max-width: 440px;
+					}
+				}
+			}
+		}
+	}
+
+}
+@media (max-width: 1365px){
+	#yt_wrapper {
+		.padding-left(0);
+	}
+	.sidebar-open {
+		cursor: pointer;
+		.left(22px);
+		position: fixed;
+		top: 9px;
+		font-size: 36px;
+		color: #ffb636;
+		z-index: 3;
+		display: block!important;
+	}
+	.sidebar-close {
+		cursor: pointer;
+		position: absolute;
+		.right(8px);
+		top: 2px;
+		color: #ffb636;
+		font-size: 19px;
+		display: block !important;
+	}
+	#sidebar-wrapper {
+		width: 240px;
+		.translate(-100%, 0);
+
+		.rtl & {
+			.translate(100%, 0);
+		}
+		&.closes {
+			.translate(-100%, 0);
+		}
+		.rtl & {
+			.translate(100%, 0);
+		}
+		&.open {
+			.translate(0, 0);
+			z-index: 9999;
+		}
+	}
+	
+}

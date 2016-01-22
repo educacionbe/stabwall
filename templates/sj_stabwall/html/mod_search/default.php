@@ -1,0 +1,75 @@
+<?php
+/**
+ * @package     Joomla.Site
+ * @subpackage  mod_search
+ *
+ * @copyright   Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+defined('_JEXEC') or die;
+
+// Including fallback code for the placeholder attribute in the search field.
+JHtml::_('jquery.framework');
+JHtml::_('script', 'system/html5fallback.js', false, true);
+
+if ($width)
+{
+	$moduleclass_sfx .= ' ' . 'mod_search' . $module->id;
+	$css = 'div.mod_search' . $module->id . ' input[type="search"]{ width:auto; }';
+	JFactory::getDocument()->addStyleDeclaration($css);
+	$width = ' size="' . $width . '"';
+}
+else
+{
+	$width = '';
+}
+
+?>
+<div class="search <?php echo $moduleclass_sfx ?>">
+	<form action="<?php echo JRoute::_('index.php');?>" method="post" class="form-inline">
+		<div class="form-group">
+		<?php
+			$output = '<label class="sr-only element-invisible" for="mod-search-searchword">' . $label . '</label> ';
+			$output  .='<div class="input-group">';
+			$output .= '<input name="searchword" id="mod-search-searchword" maxlength="' . $maxlength . '"  class="inputbox search-query" type="search"' . $width;
+			$output .= ' placeholder="' . $text . '" />';
+
+			if ($button) :
+				if ($imagebutton) :
+					$btn_output = ' <input type="image" alt="' . $button_text . '" class="button" src="' . $img . '" onclick="this.form.searchword.focus();"/>';
+				else :
+					$button_text = '@search' ? '': $button_text;
+					$spanclass = $button_text ? '' : 'fa fa-search';
+					$btn_output = ' <button class="button input-group-addon" onclick="this.form.searchword.focus();"><span class="' . $spanclass .'">' . $button_text . '</span></button>';
+				endif;
+
+				switch ($button_pos) :
+					case 'top' :
+						$output = $btn_output . '<br />' . $output;
+						break;
+
+					case 'bottom' :
+						$output .= '<br />' . $btn_output;
+						break;
+
+					case 'right' :
+						$output .= $btn_output;
+						break;
+
+					case 'left' :
+					default :
+						$output = $btn_output . $output;
+						break;
+				endswitch;
+
+			endif;
+			$output .= '</div>';
+			echo $output;
+		?>
+		</div>
+		<input type="hidden" name="task" value="search" />
+		<input type="hidden" name="option" value="com_search" />
+		<input type="hidden" name="Itemid" value="<?php echo $mitemid; ?>" />
+	</form>
+</div>

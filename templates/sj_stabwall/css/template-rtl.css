@@ -1,0 +1,142 @@
+/*******************************************
+***          YT Framework: less          ***
+*******************************************/
+/*   1.System Tool
+ *   2.Grid Systemp And Page Structure
+ *   3.Joomla Base & Component Joomla
+ *   4.Custom Module
+ */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*******************************************
+***       Style color  Green             ***
+*******************************************/
+.rtl {
+  /*GENERIC BASE JOOMLA*/
+  /*GENERIC ARTICLE STYLES*/
+  /*MODULE JOOMLA DEFAULT*/
+  /*MODULE  VARIATIONS*/
+  /* Mod Default Style */
+  /* MODULE XHTML */
+  /* MODULE YT */
+}
+.rtl #yt_tool_bottom .module .btn-special {
+  padding: 0 5px;
+}
+.rtl .media-left,
+.rtl .media-right,
+.rtl .media-body {
+  display: table-cell;
+  vertical-align: top;
+}
+.rtl .media,
+.rtl .media-body {
+  overflow: visible;
+}
+.rtl #system-message .error ul {
+  margin-right: 0;
+  background-position: 99% center;
+}
+.rtl .form-horizontal .control-label {
+  text-align: right;
+}
+.rtl ul,
+.rtl ol {
+  padding-right: 12px;
+}
+.rtl .blog .fa-angle-double-right::before {
+  content: "\f100";
+}
+.rtl .slideshow .owl-stage {
+  float: left;
+}
+.rtl .slideshow .yt-content-slider .content.style3 {
+  -webkit-transform: translate(50%, 0px);
+  -moz-transform: translate(50%, 0px);
+  -ms-transform: translate(50%, 0px);
+  -o-transform: translate(50%, 0px);
+  transform: translate(50%, 0px);
+}
+.rtl .slideshow .owl-prev:before {
+  content: "\f105";
+}
+.rtl .slideshow .owl-next:before {
+  content: "\f104";
+}
+.rtl .fa-angle-left::before {
+  content: "\f105";
+}
+.rtl .fa-angle-right::before {
+  content: "\f104";
+}
+.rtl .latest-blog .sj-extraslider .owl-stage {
+  float: left;
+}
+.rtl .newsletter .acymailing_module_form .acymailing_form::before {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.rtl .categories-module li a::before {
+  content: '\f0d9 ';
+}
+.rtl .sj-listing-tabs .ltabs-tabs-container .ltabs-tabs li:first-child {
+  border-radius: 0 4px 4px 0;
+}
+.rtl .sj-listing-tabs .ltabs-tabs-container .ltabs-tabs li:last-child {
+  border-radius: 4px 0 0 4px;
+  border-left: 1px solid #e9e9e9;
+}
+.rtl .sj-listing-tabs .ltabs-tabs-container .ltabs-tabs-wrap.ltabs-selectbox {
+  text-align: right;
+}
+.rtl .sj-listing-tabs .ltabs-tabs-container .ltabs-tabs-wrap.ltabs-selectbox span.ltabs-tab-arrow,
+.rtl .sj-listing-tabs .ltabs-tabs-container .ltabs-tabs-wrap.ltabs-selectbox span.ltabs-tab-selected {
+  float: right;
+}
+.rtl .sj-listing-tabs .ltabs-tabs-container .ltabs-tabs-wrap.ltabs-selectbox span.ltabs-tab-arrow {
+  border-radius: 3px 0 0 3px;
+}
+.rtl .sj-listing-tabs .ltabs-tabs-container .ltabs-tabs-wrap.ltabs-selectbox span.ltabs-tab-selected {
+  border-radius: 0 3px 3px 0;
+  border: 1px solid #ddd;
+}
+.rtl .sj-megamenu li .sj-megamenu-child {
+  right: 100% !important;
+}
+.rtl .contact-ajax .ctajax-element .el-inner label {
+  float: right;
+}
+.rtl table.category thead tr th {
+  text-align: right;
+}
+.rtl ul.style-menu > li > a::before,
+.rtl ul.style-menu > li .mod-articles-category-group::before {
+  content: "\f0d9";
+}

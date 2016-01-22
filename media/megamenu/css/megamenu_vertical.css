@@ -1,0 +1,191 @@
+
+.sambar{
+	position: relative;
+	margin: 20px 0;
+}
+.sambar a:focus{
+	outline: none;
+}
+.sambar ul li{
+    background: none;
+    margin: 0;
+    padding:0;
+    position: relative;
+}
+.btn-sambar{
+	display:none;
+}
+.sambar .sambar-inner {
+	background-color: #4f4f4f;
+	background-image: linear-gradient(bottom, rgb(43,43,43) 4%, rgb(59,59,59) 36%, rgb(79,79,79) 75%);
+	background-image: -o-linear-gradient(bottom, rgb(43,43,43) 4%, rgb(59,59,59) 36%, rgb(79,79,79) 75%);
+	background-image: -moz-linear-gradient(bottom, rgb(43,43,43) 4%, rgb(59,59,59) 36%, rgb(79,79,79) 75%);
+	background-image: -webkit-linear-gradient(bottom, rgb(43,43,43) 4%, rgb(59,59,59) 36%, rgb(79,79,79) 75%);
+	background-image: -ms-linear-gradient(bottom, rgb(43,43,43) 4%, rgb(59,59,59) 36%, rgb(79,79,79) 75%);	
+	background-repeat: repeat-x;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 3px 3px 1px #C7C7C7;
+	-moz-box-shadow: 0 3px 3px 1px #C7C7C7;
+	 box-shadow: 0 3px 3px 1px #C7C7C7;
+}
+
+.sj-megamenu-vertical {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+}
+.sj-megamenu-vertical:before,
+.sj-megamenu-vertical:after,
+.sambar:before,
+.sambar:after {
+	content: '';
+	display: table;
+}
+.sj-megamenu-vertical:after,.sambar:after {
+	clear: both;
+}
+
+
+.sj-megamenu-fluid >.level-1.open{
+	position: static;
+}
+.sj-megamenu-fluid >.level-1 >.sj-megamenu-child {
+	left: 0;
+	right: 0;
+	width: 100% !important;
+	padding:5px 0;
+}
+.sj-megamenu-fluid>.level-1 >.sj-megamenu-child >.submenu   {
+	margin:0 5px;
+}
+
+.sj-megamenu-vertical .level-1 > .sj-megamenu-child{
+	display:none;
+}
+
+.sj-megamenu-vertical .level-1 .menu-title span,.sj-megamenu-vertical .level-1 .menu-title em{
+	color:#fff;
+	display:block;
+}
+.sj-megamenu-vertical .level-1 .menu-title span{
+	font-size:14px;
+}
+
+.sj-megamenu-vertical .level-1 .menu-title em{
+	font-size:12px;
+}
+
+.sj-megamenu-vertical .level-1>a,.sj-megamenu-horizontal .level-1>span {
+	padding: 0 15px;
+	display: block;
+	height: 60px;
+}
+
+.sj-megamenu-vertical .level-1 .menu-title{
+	display: block;
+}
+
+.sj-megamenu-vertical .mega-pinned>a>span>span {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #444444;
+}
+.sj-megamenu-vertical .mega-pinned >a>span>em {
+	text-transform: none;
+	font-weight: normal;
+}
+
+.sj-megamenu-vertical .level-1{
+	border-bottom: 1px solid #696969;
+    border-top: 1px solid #3C3C3C;
+}
+
+.sj-megamenu-vertical .level-1:hover > .sj-megamenu-child{
+	display:block;
+}
+
+.sj-megamenu-vertical .level-1{
+	position:relative;
+}
+
+.sj-megamenu-vertical .level-1 > .sj-megamenu-child{
+	position:absolute;
+	top:0px;
+	left:-1000px;
+	width:1000px;
+	background-color: #4f4f4f;
+	background-image: linear-gradient(bottom, rgb(43,43,43) 4%, rgb(59,59,59) 36%, rgb(79,79,79) 75%);
+	background-image: -o-linear-gradient(bottom, rgb(43,43,43) 4%, rgb(59,59,59) 36%, rgb(79,79,79) 75%);
+	background-image: -moz-linear-gradient(bottom, rgb(43,43,43) 4%, rgb(59,59,59) 36%, rgb(79,79,79) 75%);
+	background-image: -webkit-linear-gradient(bottom, rgb(43,43,43) 4%, rgb(59,59,59) 36%, rgb(79,79,79) 75%);
+	background-image: -ms-linear-gradient(bottom, rgb(43,43,43) 4%, rgb(59,59,59) 36%, rgb(79,79,79) 75%);	
+	background-repeat: repeat-x;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 3px 3px 1px #C7C7C7;
+	-moz-box-shadow: 0 3px 3px 1px #C7C7C7;
+	 box-shadow: 0 3px 3px 1px #C7C7C7;
+}
+
+.sj-megamenu-vertical .level-1 .sub-1-4{
+	width:25%;
+	float:left;
+}
+.sj-megamenu-vertical .level-1 .sub-1-2{
+	width:50%;
+	float:left;
+}
+
+.sj-megamenu-vertical .sj-megamenu-child .divider {
+	height: 1px;
+	margin: 5px 0;
+	float: left;
+	width: 100% !important;
+	display: block;
+	clear: both;
+	border-top: 1px dashed #CCCCCC;
+}
+
+.sj-megamenu-vertical .menu-sub .submenu {
+	margin:0px;
+	padding:0px 0 0 10px;
+}
+
+.sj-megamenu-vertical .menu-sub .submenu .level-3 span{
+	font-size:12px;
+}
+
+.sj-megamenu-vertical .menu-sub .submenu .level-3 em{
+	font-size:10px;
+}
+
+.sj-megamenu-vertical ul{
+	list-style:none;
+}
+
+.sj-megamenu-vertical .level-2 > .sj-megamenu-child{
+	margin:10px 10px 10px 0;
+}
+.sj-megamenu-vertical .menu-tab .level-2{
+	position:relative;
+	width:20%;
+}
+.sj-megamenu-vertical .menu-tab > .sj-megamenu-child{
+	height:410px;
+}
+.sj-megamenu-vertical .menu-tab .level-2 > .sj-megamenu-child{
+	display:none;
+	position:absolute;
+	top:0px;
+	left:100%;
+	width:1000px;
+}
+
+.sj-megamenu-vertical .menu-tab .level-2:hover > .sj-megamenu-child{
+	display:block;
+}
+

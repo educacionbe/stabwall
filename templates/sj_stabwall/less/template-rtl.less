@@ -1,0 +1,187 @@
+/*******************************************
+***          YT Framework: less          ***
+*******************************************/
+
+// --* RTL Language Templates *------------------
+// ---------------------------------------------
+/*   1.System Tool
+ *   2.Grid Systemp And Page Structure
+ *   3.Joomla Base & Component Joomla
+ *   4.Custom Module
+ */
+
+// Bootstrap mixins
+@import "../asset/bootstrap/less/mixins.less";
+@import "../asset/bootstrap/less/variables.less";
+@import "color/variables_color.less";
+.rtl{
+    // 1.System Tool
+    // --------------------------------------------------
+   #yt_tool_bottom {
+		.module {
+			.btn-special{
+				padding: 0 5px;
+			}
+		}
+	}
+    // 2.Grid Systemp And Page Structure
+    // --------------------------------------------------
+	.media-left, .media-right, .media-body {
+		display: table-cell;
+		vertical-align: top;
+	}
+	.media, .media-body {
+		overflow: visible;
+	}
+    // 3.Joomla Base & Component Joomla
+    // --------------------------------------------------
+
+    /*GENERIC BASE JOOMLA*/
+    #system-message{
+        .error > {
+			ul{
+				margin-right: 0;
+				background-position: 99% center;
+			}
+		}	
+    }
+	.form-horizontal .control-label {
+		text-align: right;
+	}
+	ul, ol {
+		padding-right: 12px;
+	}
+    /*GENERIC ARTICLE STYLES*/
+	// Category Blog
+	.blog{
+		.fa-angle-double-right::before {
+			content: "\f100";
+		}
+    } 
+	// Featured Article
+	.blog-featured{
+		
+	}
+	//Single Article
+	.item-page {
+  
+	}
+
+    // 4.Custom Module 
+    // --------------------------------------------------
+     
+    /*MODULE JOOMLA DEFAULT*/
+     
+    /*MODULE  VARIATIONS*/
+    
+	/* Mod Default Style */
+	  
+	/* MODULE XHTML */
+	//slideshow 
+	.slideshow {
+		.owl-stage {
+			float: left;
+		}
+		.yt-content-slider {
+			.content{
+				&.style3 {
+					.translate(50%, 0px);
+				}
+			}
+		}
+		.owl-prev {
+			&:before {
+				content: "\f105";
+			}
+		}
+		.owl-next {
+			&:before {
+				content: "\f104";
+			}
+		}
+	}
+	.fa-angle-left::before {
+		content: "\f105";
+	}
+	.fa-angle-right::before {
+		content: "\f104";
+	}
+	.latest-blog {
+		.sj-extraslider {
+			.owl-stage {
+				float: left;
+			}
+		}
+	}
+	.newsletter {
+		.acymailing_module_form {
+			.acymailing_form{
+				&::before {
+					//.rotateY(180deg);
+					-webkit-transform: rotateY(180deg);
+					 -moz-transform: rotateY(180deg);
+					  -ms-transform: rotateY(180deg);
+					   -o-transform: rotateY(180deg);
+						  transform: rotateY(180deg);
+				}
+			}
+		}
+	}
+	.categories-module {
+		li {
+			a::before {
+				content: '\f0d9 ';
+			}
+		}
+	}
+	
+	
+	/* MODULE YT */
+	// SJ contact Ajax
+	
+	
+	.sj-listing-tabs {
+		.ltabs-tabs-container {
+			.ltabs-tabs {
+				li{
+					&:first-child {
+						border-radius: 0 4px 4px 0;
+					}
+					&:last-child {
+						border-radius: 4px 0 0 4px;
+						border-left: 1px solid #e9e9e9;
+					}
+				}
+			}
+			.ltabs-tabs-wrap.ltabs-selectbox {
+				text-align: right;
+				span.ltabs-tab-arrow,
+				span.ltabs-tab-selected{
+					float: right;
+				}
+				span.ltabs-tab-arrow {
+					border-radius: 3px 0 0 3px;
+				}
+				span.ltabs-tab-selected{
+					border-radius: 0 3px 3px 0;
+					border: 1px solid #ddd;
+				}
+			}
+		}
+	}
+	.sj-megamenu li .sj-megamenu-child	{
+		right: 100% !important;
+	}
+	.contact-ajax .ctajax-element .el-inner label {
+		float: right;
+	}
+	table.category thead tr th {
+		text-align: right;
+	}
+	ul.style-menu > li > a::before, 
+	ul.style-menu > li .mod-articles-category-group::before {
+		content: "\f0d9";
+	}
+	
+}
+

@@ -1,0 +1,115 @@
+// PORTRAIT TABLET TO DEFAULT DESKTOP
+// ----------------------------------
+/* ------------------------------------*/
+/* 	1. Layout Templates ---------------*/
+/* 	2. Joomla Core      ---------------*/
+/* 	3. Home Page        ---------------*/
+/* 	4. Bonus Page       ---------------*/
+/* 	5. Module           ---------------*/
+/* 	6. k2 Content       ---------------*/
+/*	-----------------------------------*/
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+	div.container {
+		width: 750px;
+	}
+	.our-team-work {
+		.item-social {
+			a {
+				.size(30px,30px);
+				line-height: 24px;
+			}
+		}
+		.slick-slider {
+			.slick-arrow {
+				.size(30px,30px);
+				line-height: 26px;
+				i {
+					line-height: 30px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: @screen-sm-max) {
+	#yt_component {
+		padding: 30px 0;
+	}
+	.slideshow {
+		.yt-content-slider {
+			.content{
+				img {
+					margin: 0 0 20px;
+					max-width: 200px;
+				}
+				.title{
+					margin: 0 0 10px;
+					font-size: 26px;
+					line-height: 26px;
+				}
+				p {
+					margin: 0;
+					font-size: 13px;
+					line-height: 20px;
+				}
+				&.style3 {
+					top: 50px;
+					img {
+						margin: 0 auto 20px;
+					}
+				}
+				
+			}
+		}
+	}
+	.latest-blog {
+		.sj-extraslider {
+			margin: 0 -10px !important;
+			.extraslider-inner {
+				.owl-item {
+					padding: 0 10px;
+					min-height: 20px !important;
+					height: auto !important
+				}
+				.center {
+					.item {
+						margin: 0;
+					}
+					.item-wrap-inner {
+						animation-duration: 0.5s;
+						-webkit-animation-name: none;
+						animation-name: none;
+					}
+				}
+				.item, .item-wrap {
+					position: static;
+				}
+			}
+		}
+	}
+	.welcome {
+		text-align: center;
+		.media-left {
+			display: block;
+			margin: 0 0 20px;
+			padding: 0;
+		}
+		.media-heading::before {
+			left: 50% !important;
+			right: auto !important;
+			.translate(-50%, 0px);
+		}
+	}
+	.we-build {
+		.image {
+			margin: 0 0 20px;
+		}
+	}
+	.block-pricing{
+		.signup {
+			padding: 8px 30px;
+		}
+	}
+	#sidebar-wrapper{
+		overflow-y: scroll;
+	}
+}
